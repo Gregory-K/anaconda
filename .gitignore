@@ -1,52 +1,9 @@
-*.py[cod]
+# This is the top-most .gitignore file
+# OS / IDE sidecar files and other artifacts justified for omission
+# should be listed in the `.git/info/exclude` file
 
-# C extensions
-*.so
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib64
-venv
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
+# Project Specifics
+*.pickle
 
 # Don't track Main.sublime-menu anymore
 Main.sublime-menu
-*.pickle
-
-# don't track .disabled_views
-.disabled_views
-
-# mypy cache
-.mypy_cache/
-poetry.lock
-pyproject.toml
-.env
