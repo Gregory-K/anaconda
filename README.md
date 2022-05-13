@@ -1,3 +1,151 @@
+# Anaconda
+
+**Anaconda v2.2.3**  
+Python IDE for Sublime Text 3/4
+
+A branch without the default keymaps.  
+Just tired of overriding keybindings.
+
+Select, alter, and apply to  
+`Packages/User/Default (<YOUR-OS>).sublime-keymap`
+
+<details>
+  <summary>**Linux**</summary>
+
+```
+[
+    {
+        "command": "anaconda_goto", "keys": ["ctrl+alt+g"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "command": "anaconda_find_usages", "keys": ["ctrl+alt+f"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "command": "anaconda_auto_format", "keys": ["ctrl+alt+r"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["tab"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]
+    },
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["ctrl+tab"], "args": {"all": true}, "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]
+    }
+]
+```
+
+</details>
+
+<details>
+  <summary>**MacOS**</summary>
+
+```
+[
+  {
+    "command": "anaconda_goto", "keys": ["ctrl+alt+g"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+  {
+    "command": "anaconda_find_usages", "keys": ["ctrl+alt+f"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+  {
+    "command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+  {
+    "command": "anaconda_auto_format", "keys": ["ctrl+alt+r"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+  {
+    "command": "anaconda_run_current_file_tests", "keys": ["ctrl+alt+t"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+  {
+    "command": "anaconda_run_current_test", "keys": ["ctrl+alt+shift+t"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["tab"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]
+    },
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["ctrl+tab"], "args": {"all": true}, "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]
+    }
+]
+```
+
+</details>
+
+<details>
+  <summary>**Windows**</summary>
+
+```
+[
+    {
+      "command": "anaconda_goto", "keys": ["ctrl+alt+g"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]},
+    {
+      "command": "anaconda_find_usages", "keys": ["ctrl+alt+f"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]},
+    {
+      "command": "anaconda_doc", "keys": ["ctrl+alt+d"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]},
+    {
+      "command": "anaconda_auto_format", "keys": ["ctrl+alt+r"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]},
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["tab"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]},
+    {
+        "command": "anaconda_fill_funcargs", "keys": ["ctrl+tab"], "args": {"all": true}, "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"},
+            {"key": "anaconda_insert_funcargs"}
+        ]}
+]
+```
+
+</details>
+
+
+
+---
+
+
+# Official README
+
 [![Join the chat at https://gitter.im/DamnWidget/anaconda](https://img.shields.io/gitter/room/DamnWidget/anaconda.svg?maxAge=2592000)](https://gitter.im/DamnWidget/anaconda?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![GitHub release](https://img.shields.io/github/release/damnwidget/anaconda.svg)](https://github.com/DamnWidget/anaconda/releases/latest)
 [![Build Status](https://travis-ci.org/DamnWidget/anaconda.svg?branch=master)](https://travis-ci.org/DamnWidget/anaconda)
